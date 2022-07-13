@@ -1,0 +1,7 @@
+{
+  "name": "E-Commerce-Complete-Ionic-UI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
