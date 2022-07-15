@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LoginRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 import { IonicModule } from '@ionic/angular';
+import { CommonComponentsModule } from 'src/app/common/components/common-components.module';
 
 
 @NgModule({
@@ -10,6 +11,7 @@ import { IonicModule } from '@ionic/angular';
   imports: [
     CommonModule,
     IonicModule,
+    CommonComponentsModule,
     LoginRoutingModule
   ]
 })
