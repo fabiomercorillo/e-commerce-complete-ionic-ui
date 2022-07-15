@@ -1,3 +1,9 @@
-<p>
-  on-boarding works!
-</p>
+<ion-content>
+  <swiper [config]="swiperConfig">
+    <ng-template swiperSlide>Slide 1</ng-template>
+    <ng-template swiperSlide>Slide 2</ng-template>
+    <ng-template swiperSlide>Slide 3</ng-template>
+  </swiper>
+
+  <ion-button expand="block" (click)="goToNext()">Continua</ion-button>
+</ion-content>

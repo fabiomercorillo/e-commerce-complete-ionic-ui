@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import SwiperCore, { SwiperOptions } from 'swiper';
 
 @Component({
   selector: 'app-on-boarding',
@@ -6,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./on-boarding.page.scss'],
 })
 export class OnBoardingPage implements OnInit {
+ swiperConfig: SwiperOptions = {
+    slidesPerView: 1,
+    navigation: true,
+    pagination: { clickable: true },
+    scrollbar: { draggable: true },
+    autoplay: true
+  };
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit(): void {}
 
+  goToNext(): void {
+    this.router.navigate(['login']);
+  }
 }
