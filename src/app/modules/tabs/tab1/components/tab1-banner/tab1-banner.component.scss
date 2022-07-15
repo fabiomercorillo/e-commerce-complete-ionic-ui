@@ -1,0 +1,17 @@
+div {
+    &.container {
+        background-color: rgb(52, 153, 162);
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+    &.row-1 {
+        font-size: .8rem;
+        color: white;
+    }
+
+    &.row-2 {
+        font-size: 1.5rem;
+        color: white;
+    }
+}

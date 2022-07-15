@@ -6,6 +6,9 @@ import { Tab1Page } from './tab1.page';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { Tab1HeaderComponent } from './components/tab1-header/tab1-header.component';
+import { Tab1BannerComponent } from './components/tab1-banner/tab1-banner.component';
+import { Tab1SliderItemComponent } from './components/tab1-slider-item/tab1-slider-item.component';
+import { Tab1Slider1Component } from './components/tab1-slider1/tab1-slider1.component';
 
 @NgModule({
   imports: [
@@ -14,6 +17,12 @@ import { Tab1HeaderComponent } from './components/tab1-header/tab1-header.compon
     FormsModule,
     Tab1PageRoutingModule
   ],
-  declarations: [Tab1Page, Tab1HeaderComponent]
+  declarations: [
+    Tab1Page,
+    Tab1HeaderComponent,
+    Tab1BannerComponent,
+    Tab1Slider1Component,
+    Tab1SliderItemComponent
+  ]
 })
 export class Tab1PageModule {}
