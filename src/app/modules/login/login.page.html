@@ -11,6 +11,31 @@
       <ion-input></ion-input>
     </ion-item>
 
-  <ion-button expand="block" (click)="goToNext()">Continua</ion-button>
+    <div class="before-submit">
+      <ion-item>
+        <ion-label>Remember me</ion-label>
+        <ion-checkbox slot="start"></ion-checkbox>
+      </ion-item>
+
+      <span>Forgot Password</span>
+    </div>
+
+    <ion-button expand="block" (click)="goToNext()">Continua</ion-button>
   </form>
+  <div class="social-media">
+    <div class="social-icon-container">
+      <img alt="google" src="../../../assets/svg/google-icon.svg" />
+    </div>
+    <div class="social-icon-container">
+          <img alt="facebook" src="../../../assets/svg/facebook-2.svg" />
+    </div>
+    <div class="social-icon-container">
+          <img alt="twitter" src="../../../assets/svg/twitter.svg" />
+    </div>
+  </div>
+
+  <div class="sign-up-container">
+    <span>Don't have an account?</span>
+    <span> Sign Up</span>
+  </div>
 </ion-content>

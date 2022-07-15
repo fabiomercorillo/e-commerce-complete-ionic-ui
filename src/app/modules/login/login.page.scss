@@ -1,0 +1,38 @@
+div {
+    &.before-submit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem;
+        span {
+            font-size: 0.8rem;
+        }
+    }
+    &.social-media {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 4rem 4rem;
+        div {
+            &.social-icon-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 1rem;
+                background-color: lightgrey;
+            }
+            img {
+                width: .8rem;
+            }
+        }
+    }
+    &.sign-up-container {
+        display: flex;
+        justify-content: center;
+        span {
+            font-size: .8rem;
+        }
+    }
+}
