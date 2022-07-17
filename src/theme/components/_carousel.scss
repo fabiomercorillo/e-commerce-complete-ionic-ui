@@ -1,0 +1,6 @@
+// SWIPER JS Carousel
+.swiper-pagination.swiper-pagination-bullets { position: relative; margin-top: 30px;}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet { margin: 2px}
+.swiper-pagination .swiper-pagination-bullet { width: 6px; }
+.swiper-pagination .swiper-pagination-bullet-active { background-color: var(--red1); width: 18px; border-radius: 4px; transition: width 0.4s ease-out;}
+.swiper-pagination .swiper-pagination-bullet { transition: width 0.2s ease-out; height: 6px; }

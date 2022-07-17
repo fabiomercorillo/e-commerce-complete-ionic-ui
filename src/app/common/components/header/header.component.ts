@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,9 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
+
 export class HeaderComponent implements OnInit {
+  @Input() onlyToolbar: boolean; // hide back button and title for parent components
 
   constructor(private router: Router) { }
 

@@ -8,12 +8,14 @@ import SwiperCore, { SwiperOptions } from 'swiper';
   styleUrls: ['./on-boarding.page.scss'],
 })
 export class OnBoardingPage implements OnInit {
- swiperConfig: SwiperOptions = {
+ slideOpts = {
     slidesPerView: 1,
-    navigation: true,
-    pagination: { clickable: true },
+    navigation: false,
+    pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets'},
     scrollbar: { draggable: true },
-    autoplay: true
+    autoplay: false
   };
 
   constructor(private router: Router) { }

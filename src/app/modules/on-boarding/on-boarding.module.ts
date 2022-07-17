@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SwiperModule } from 'swiper/angular';
 import { OnBoardingRoutingModule } from './on-boarding-routing.module';
 import { OnBoardingPage } from './on-boarding.page';
 import { IonicModule } from '@ionic/angular';
+import { CommonComponentsModule } from 'src/app/common/components/common-components.module';
 
 
 @NgModule({
@@ -11,7 +11,7 @@ import { IonicModule } from '@ionic/angular';
   imports: [
     CommonModule,
     IonicModule,
-    SwiperModule,
+    CommonComponentsModule,
     OnBoardingRoutingModule
   ]
 })
