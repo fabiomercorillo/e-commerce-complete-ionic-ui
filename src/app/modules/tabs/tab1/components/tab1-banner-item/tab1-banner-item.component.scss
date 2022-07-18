@@ -1,0 +1,18 @@
+div {
+    &.container {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 27vw;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    &.title {
+        color: #FFF;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    &.subTitle {
+        color: #FFF;
+        font-size: .7rem;
+    }
+}
