@@ -12,6 +12,8 @@ import { SwiperModule } from 'swiper/angular';
 import { Tab1Slider2Component } from './components/tab1-slider2/tab1-slider2.component';
 import { Tab1Slider3Component } from './components/tab1-slider3/tab1-slider3.component';
 import { Tab1BannerItemComponent } from './components/tab1-banner-item/tab1-banner-item.component';
+import { Tab1MenusComponent } from './components/tab1-menus/tab1-menus.component';
+import { Tab1CircularButtonComponent } from './components/tab1-circular-button/tab1-circular-button.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { Tab1BannerItemComponent } from './components/tab1-banner-item/tab1-bann
     Tab1SliderItemComponent,
     Tab1Slider2Component,
     Tab1BannerItemComponent,
-    Tab1Slider3Component
+    Tab1Slider3Component,
+    Tab1MenusComponent,
+    Tab1CircularButtonComponent
   ]
 })
 export class Tab1PageModule {}

@@ -1,0 +1,27 @@
+div {
+    &.container {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem;
+        div {
+            &.icon-container {
+                background: rgb(254, 150, 152);
+                width: 15vw;
+                height: 15vw;
+                border-radius: 15vw;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+            }
+            &.label {
+                font-size: .8rem;
+                text-align: center;
+            }
+        }
+    }
+}
