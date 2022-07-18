@@ -1,0 +1,39 @@
+div {
+    &.container {
+        width: 100%;
+        img {
+            width: 100%;
+            background: #f6f6f6;
+            padding: 1.5rem 0.5rem;
+            border-radius: .9rem;
+        }
+        div {
+            &.description {
+                font-size: .75rem;
+            }
+            &.last-row {
+                display: flex;
+                justify-content: space-between;
+                div {
+                    &.price {
+                        font-weight: bold;
+                        color: rgb(206, 30, 42);
+                    }
+                    &.like {
+                        background-color: rgb(247,215,217);
+                        border-radius: 1.5rem;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        ion-icon {
+                            color: red;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
