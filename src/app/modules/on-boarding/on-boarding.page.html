@@ -2,32 +2,50 @@
 <ion-content class="ion-padding-bottom ion-padding-end ion-padding-start">
   <section class="wrapper">
     <div>
-      <ion-slides pager="true" [options]="slideOpts">
-        <ion-slide>
+      <swiper
+        [config]="slideOpts"
+        [pagination]="{ clickable: true }"
+        class="onboarding"
+      >
+        <ng-template swiperSlide>
           <div class="container">
             <h1>ecommerSS group</h1>
             <h6>Benvenuto su ecommerSS group!</h6>
-            <img alt="splash-1" src="../../../assets/images/on-boarding/splash_1.png" />
+            <img
+              alt="splash-1"
+              src="../../../assets/images/on-boarding/splash_1.png"
+            />
           </div>
-        </ion-slide>
-        <ion-slide>
+        </ng-template>
+        <ng-template swiperSlide>
           <div class="container">
             <h1>ecommerSS group</h1>
             <h6>Aiutiamo le persone a comprare in modo smart! So simple!</h6>
-            <img alt="splash-1" src="../../../assets/images/on-boarding/splash_2.png" />
+            <img
+              alt="splash-1"
+              src="../../../assets/images/on-boarding/splash_2.png"
+            />
           </div>
-        </ion-slide>
-        <ion-slide>
+        </ng-template>
+        <ng-template swiperSlide>
           <div class="container">
             <h1>ecommerSS group</h1>
-            <h6>Mostriamo il modo più semplice per fare acquisti. Resta a casa, per il resto ci pensiamo noi</h6>
-            <img alt="splash-1" src="../../../assets/images/on-boarding/splash_3.png" />
+            <h6>
+              Mostriamo il modo più semplice per fare acquisti. Resta a casa,
+              per il resto ci pensiamo noi
+            </h6>
+            <img
+              alt="splash-1"
+              src="../../../assets/images/on-boarding/splash_3.png"
+            />
           </div>
-        </ion-slide>
-      </ion-slides>
+        </ng-template>
+      </swiper>
     </div>
     <app-footer>
-      <ion-button expand="block" size="large" (click)="goToNext()">Continua</ion-button>
+      <ion-button expand="block" size="large" (click)="goToNext()"
+        >Continua</ion-button
+      >
     </app-footer>
   </section>
 </ion-content>

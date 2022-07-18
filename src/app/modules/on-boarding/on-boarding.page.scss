@@ -1,5 +1,6 @@
 .wrapper { height: 100%; display: flex; justify-content: space-between; flex-direction: column;}
-.container h1, .container h6 { margin-top: 0}
+.container { text-align: center;}
+.container h1, .container h6 { margin-top: 0; margin-bottom: 5px;}
 .container h1 { color: var(--red1); font-weight: bold; font-size: 2.2rem;}
 .container h6 { color: var(--gray1); font-size: .9rem;}
 .container img { width: 72%; height: 72%; margin-top: 60px; margin-bottom: 20px;}
