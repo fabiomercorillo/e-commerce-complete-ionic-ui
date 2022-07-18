@@ -1,3 +1,14 @@
-<p>
-  tab1-slider3 works!
-</p>
+<div class="container">
+  <div class="header">
+    <div class="description">Basato sui tuoi acquisti</div>
+    <div class="other">Vedi altro</div>
+  </div>
+  <div class="products-container">
+    <app-tab1-slider-item *ngFor="let s of slider" 
+      [img]="s?.img" 
+      [description]="s?.description" 
+      [price]="s?.price"
+      [liked]="s?.like">
+    </app-tab1-slider-item>
+  </div>
+</div>

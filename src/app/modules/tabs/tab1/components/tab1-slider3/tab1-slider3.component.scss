@@ -1,0 +1,18 @@
+div {
+    &.container {
+        div {
+            &.header {
+                    display: flex;
+                    justify-content: space-between;
+                }
+        }
+        div {
+            &.products-container {
+                display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+        }
+}
