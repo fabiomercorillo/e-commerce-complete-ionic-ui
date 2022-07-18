@@ -1,9 +1,13 @@
+ion-icon {     
+    margin: 15px 0px -33px 0 !important;
+    height: 100%;
+}
+u { font-size: .8rem;}
 div {
     &.before-submit {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 2rem;
         span {
             font-size: 0.8rem;
         }

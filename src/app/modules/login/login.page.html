@@ -1,42 +1,64 @@
 <app-header></app-header>
-<ion-content>
-  <p>Sign in with your mail and password or continue with social media</p>
-  <form>
-    <ion-item>
-      <ion-label position="floating">Enter your email</ion-label>
-      <ion-input></ion-input>
+<ion-content class="ion-padding">
+  <div class="ion-text-center ion-margin-horizontal ion-padding-bottom">
+    <h2>Bentornato</h2>
+    <h6>Accedi con la tua email e password o continua con i social media</h6>
+  </div>
+  <form class="ion-margin-top">
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input
+        placeholder="Inserisci email"
+        pattern="email"
+        type="email"
+      ></ion-input>
+      <ion-icon name="mail-outline" slot="end"></ion-icon>
     </ion-item>
-    
+
     <ion-item>
-      <ion-label position="floating">Enter your password</ion-label>
-      <ion-input></ion-input>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input
+        placeholder="Inserisci la password"
+        pattern="password"
+        type="password"
+      ></ion-input>
+      <ion-icon name="lock-closed-outline" slot="end"></ion-icon>
     </ion-item>
 
-    <div class="before-submit">
-      <ion-item>
-        <ion-label>Remember me</ion-label>
-        <ion-checkbox slot="start"></ion-checkbox>
-      </ion-item>
+    <ion-row
+      class="ion-align-items-center ion-justify-content-between ion-margin-vertical ion-padding-top"
+    >
+      <ion-col>
+        <div>
+          <ion-item mode="md" class="no-ripple no-border">
+            <ion-label mode="ios">Ricordami</ion-label>
+            <ion-checkbox slot="start"></ion-checkbox>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col class="ion-text-end">
+        <div><u>Password dimenticata</u></div>
+      </ion-col>
+    </ion-row>
 
-      <span>Forgot Password</span>
-    </div>
-
-    <ion-button expand="block" (click)="goToNext()">Continua</ion-button>
+    <ion-button expand="block" size="large" (click)="goToNext()"
+      >Continua</ion-button
+    >
   </form>
   <div class="social-media">
     <div class="social-icon-container">
       <img alt="google" src="../../../assets/svg/google-icon.svg" />
     </div>
     <div class="social-icon-container">
-          <img alt="facebook" src="../../../assets/svg/facebook-2.svg" />
+      <img alt="facebook" src="../../../assets/svg/facebook-2.svg" />
     </div>
     <div class="social-icon-container">
-          <img alt="twitter" src="../../../assets/svg/twitter.svg" />
+      <img alt="twitter" src="../../../assets/svg/twitter.svg" />
     </div>
   </div>
 
   <div class="sign-up-container">
-    <span>Don't have an account?</span>
-    <span> Sign Up</span>
+    <span>Non ti sei ancora registrato?</span>
+    <span> Registrati</span>
   </div>
 </ion-content>
