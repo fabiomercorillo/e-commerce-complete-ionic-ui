@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { get } from 'lodash';
 import { IProductItem } from 'src/app/common/models/i-product-item';
 
 @Component({
@@ -9,13 +10,19 @@ import { IProductItem } from 'src/app/common/models/i-product-item';
 })
 export class PdpPage implements OnInit {
   product: IProductItem;
+  selectedImg: string;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.queryParams
       .subscribe((params: IProductItem) => {
         this.product = params;
+        this.selectedImg = get(this.product?.images, 0);
       }
     );
+  }
+
+  onThumbnailClick(i: string): void {
+    this.selectedImg = i;
   }
 }

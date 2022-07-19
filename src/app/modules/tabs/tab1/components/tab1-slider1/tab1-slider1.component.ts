@@ -18,10 +18,10 @@ export class Tab1Slider1Component implements OnInit {
         price: '64.99 €',
         like: true,
         images: [
-          'asset/products/1/1.png',
-          'asset/products/1/2.png',
-          'asset/products/1/3.png',
-          'asset/products/1/4.png'
+          'assets/images/products/1/1.png',
+          'assets/images/products/1/2.png',
+          'assets/images/products/1/3.png',
+          'assets/images/products/1/4.png'
         ]
       },
       {
@@ -30,7 +30,7 @@ export class Tab1Slider1Component implements OnInit {
         price: '50.5 €',
         like: true,
         images: [
-          'asset/products/2/1.png',
+          'assets/images/products/2/1.png',
         ]
       },
       {
@@ -39,7 +39,7 @@ export class Tab1Slider1Component implements OnInit {
         price: '36.55 €',
         like: true,
         images: [
-          'asset/products/3/1.png',
+          'assets/images/products/3/1.png',
         ]
       },
       {
@@ -48,7 +48,7 @@ export class Tab1Slider1Component implements OnInit {
         price: '20.2 €',
         like: true,
         images: [
-          'asset/products/4/1.png',
+          'assets/images/products/4/1.png',
         ]
       }
     ];
