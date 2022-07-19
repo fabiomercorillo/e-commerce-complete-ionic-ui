@@ -1,4 +1,14 @@
-<app-header></app-header>
-<ion-content>
-    <ion-button expand="block" (click)="goToNext()">Continua</ion-button>
+<app-header [onlyToolbar]="true"></app-header>
+<ion-content class="ion-text-center">
+  <section class="ion-padding-vertical ion-margin-vertical">
+    <img src="assets/images/login/success.png" />
+    <h2>Login effettuato!</h2>
+  </section>
 </ion-content>
+<app-footer class="ion-text-center">
+  <div class="ion-padding ion-margin">
+    <ion-button size="large" (click)="goToNext()">
+      <span class="ion-padding ion-margin-horizontal">Vai in home</span>
+    </ion-button>
+  </div>
+</app-footer>

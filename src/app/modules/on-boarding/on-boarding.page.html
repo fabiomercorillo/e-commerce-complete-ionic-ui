@@ -9,8 +9,8 @@
       >
         <ng-template swiperSlide>
           <div class="container">
-            <h1>ecommerSS group</h1>
-            <h6>Benvenuto su ecommerSS group!</h6>
+            <h1 class="text-primary">ecommerSS group</h1>
+            <h6 class="text-secondary">Benvenuto su ecommerSS group!</h6>
             <img
               alt="splash-1"
               src="../../../assets/images/on-boarding/splash_1.png"
@@ -19,8 +19,10 @@
         </ng-template>
         <ng-template swiperSlide>
           <div class="container">
-            <h1>ecommerSS group</h1>
-            <h6>Aiutiamo le persone a comprare in modo smart! So simple!</h6>
+            <h1 class="text-primary">ecommerSS group</h1>
+            <h6 class="text-secondary">
+              Aiutiamo le persone a comprare in modo smart! So simple!
+            </h6>
             <img
               alt="splash-1"
               src="../../../assets/images/on-boarding/splash_2.png"
@@ -29,8 +31,8 @@
         </ng-template>
         <ng-template swiperSlide>
           <div class="container">
-            <h1>ecommerSS group</h1>
-            <h6>
+            <h1 class="text-primary">ecommerSS group</h1>
+            <h6 class="text-secondary">
               Mostriamo il modo più semplice per fare acquisti. Resta a casa,
               per il resto ci pensiamo noi
             </h6>
@@ -42,10 +44,10 @@
         </ng-template>
       </swiper>
     </div>
-    <app-footer>
-      <ion-button expand="block" size="large" (click)="goToNext()"
-        >Continua</ion-button
-      >
-    </app-footer>
   </section>
 </ion-content>
+<app-footer>
+  <ion-button expand="block" size="large" (click)="goToNext()"
+    >Continua</ion-button
+  >
+</app-footer>

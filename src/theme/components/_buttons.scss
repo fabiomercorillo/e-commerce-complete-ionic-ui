@@ -1,4 +1,13 @@
-ion-button { --border-radius: 20px; font-weight: 600;}
+ion-button { 
+  --border-radius: 20px; 
+  --background-activated: var(--red1);
+  --background-activated-opacity: var(--red1);
+  --background-focused: var(--red1);
+  --background-focused-opacity: var(--red1);
+  --background-hover: var(--red1);
+  --background-hover-opacity: var(--red1);
+  font-weight: 600;
+}
 .no-ripple {
     --ripple-color: transparent;
   }

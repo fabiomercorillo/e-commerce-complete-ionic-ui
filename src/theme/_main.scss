@@ -1,9 +1,12 @@
 @import 'abstracts/variables',
-        'abstracts/helpers';
+        'abstracts/helpers',
+        'abstracts/functions',
+        'abstracts/mixin';
 
 @import 'base/typography';
 
 @import 'components/buttons',
-        'components/carousel';
+        'components/carousel',
+        'components/header';
 
 @import 'pages/body'
