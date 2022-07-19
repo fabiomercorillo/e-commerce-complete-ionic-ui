@@ -22,7 +22,8 @@ export class Tab1Slider1Component implements OnInit {
           'assets/images/products/1/2.png',
           'assets/images/products/1/3.png',
           'assets/images/products/1/4.png'
-        ]
+        ],
+        rate: 4.8
       },
       {
         img: '../../../../assets/images/slider/2.png',
@@ -31,7 +32,8 @@ export class Tab1Slider1Component implements OnInit {
         like: true,
         images: [
           'assets/images/products/2/1.png',
-        ]
+        ],
+        rate: 3.1
       },
       {
         img: '../../../../assets/images/slider/3.png',
@@ -40,7 +42,8 @@ export class Tab1Slider1Component implements OnInit {
         like: true,
         images: [
           'assets/images/products/3/1.png',
-        ]
+        ],
+        rate: 4.9
       },
       {
         img: '../../../../assets/images/slider/4.png',
@@ -49,7 +52,8 @@ export class Tab1Slider1Component implements OnInit {
         like: true,
         images: [
           'assets/images/products/4/1.png',
-        ]
+        ],
+        rate: 3.7
       }
     ];
   }

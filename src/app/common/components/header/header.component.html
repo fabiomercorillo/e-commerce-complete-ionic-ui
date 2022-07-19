@@ -1,9 +1,15 @@
 <ion-header collapse="fade" class="no-border">
-  <ion-toolbar>
+  <ion-toolbar [ngStyle]="{'background': color}">
     <ion-buttons slot="start" [hidden]="onlyToolbar">
       <ion-button (click)="onBackClick()">
         <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
       </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end" [hidden]="onlyToolbar" *ngIf="rate">
+      <div class="rate-container">
+        <div class="label">{{rate}}</div>
+        <ion-icon name="star"></ion-icon>
+      </div>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>

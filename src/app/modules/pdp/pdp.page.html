@@ -1,4 +1,4 @@
-<app-header></app-header>
+<app-header [color]="headerColor" [rate]="product?.rate"></app-header>
 <ion-content>
   <div class="container">
     <div class="focused-image" [ngStyle]="{'background-image': 'url(' + selectedImg + ')'}"></div>

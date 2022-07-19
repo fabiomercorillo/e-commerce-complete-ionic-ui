@@ -12,6 +12,7 @@ export class Tab1SliderItemComponent {
   @Input() price: string;
   @Input() liked: boolean;
   @Input() images: Array<string>;
+  @Input() rate: number;
 
   constructor(private router: Router) {}
 
@@ -21,7 +22,8 @@ export class Tab1SliderItemComponent {
       description: this.description,
       price: this.price,
       liked: this.liked,
-      images: this.images
+      images: this.images,
+      rate: this.rate
     }});
   }
 }
