@@ -3,5 +3,6 @@ export interface IProductItem {
     description: string;
     price: string;
     like: boolean;
-    images?: Array<string>;
+    images: Array<string>;
+    rate: number;
 }

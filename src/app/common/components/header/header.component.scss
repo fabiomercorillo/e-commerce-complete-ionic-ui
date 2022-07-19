@@ -1,2 +1,25 @@
-ion-toolbar { --ion-background: transparent; --border-style: none}
+ion-toolbar { 
+    --ion-background: transparent;
+    --border-style: none
+}
 ion-button { --color: '#000';}
+div {
+    &.rate-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFF;
+        border-radius: 0.8rem;
+        padding: 0.4rem 0.7rem;
+        div {
+            &.label {
+                font-size: 0.7rem;
+                margin-right: 0.4rem;
+            }
+        }
+        ion-icon {
+            font-size: 0.8rem;
+            color: rgb(254, 186, 49);
+        }
+    }
+}

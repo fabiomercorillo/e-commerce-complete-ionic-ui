@@ -9,10 +9,11 @@ import { Router } from '@angular/router';
 
 export class HeaderComponent implements OnInit {
   @Input() onlyToolbar: boolean; // hide back button and title for parent components
-
+  @Input() color: string;
+  @Input() rate: number;
   constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit(): void {}
 
   onBackClick(): void {
     history.back();

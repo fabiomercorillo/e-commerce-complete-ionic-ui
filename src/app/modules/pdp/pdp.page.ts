@@ -11,6 +11,7 @@ import { IProductItem } from 'src/app/common/models/i-product-item';
 export class PdpPage implements OnInit {
   product: IProductItem;
   selectedImg: string;
+  headerColor = '#f6f6f6';
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {

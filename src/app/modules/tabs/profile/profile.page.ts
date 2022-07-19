@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProfileMenu } from './models/i-profile-menu';
 
 @Component({
   selector: 'app-profile',
@@ -6,7 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['profile.page.scss']
 })
 export class ProfilePage {
-
-  constructor() {}
+  menuList: Array<IProfileMenu> = [
+    {
+      icon: 'person-outline',
+      label: 'Il mio Account'
+    },
+    {
+      icon: 'notifications-outline',
+      label: 'Notifiche'
+    },
+    {
+      icon: 'settings-outline',
+      label: 'Impostazioni'
+    },
+    {
+      icon: 'help-circle-outline',
+      label: 'Help Center'
+    },
+    {
+      icon: 'log-out-outline',
+      label: 'Log Out'
+    }
+  ];
 
 }
