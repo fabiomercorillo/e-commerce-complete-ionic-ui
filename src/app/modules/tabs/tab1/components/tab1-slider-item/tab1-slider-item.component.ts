@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1-slider-item',
@@ -10,4 +11,17 @@ export class Tab1SliderItemComponent {
   @Input() description: string;
   @Input() price: string;
   @Input() liked: boolean;
+  @Input() images: Array<string>;
+
+  constructor(private router: Router) {}
+
+  onClick(): void {
+    this.router.navigate(['pdp'], { queryParams: {
+      img: this.img,
+      description: this.description,
+      price: this.price,
+      liked: this.liked,
+      images: this.images
+    }});
+  }
 }

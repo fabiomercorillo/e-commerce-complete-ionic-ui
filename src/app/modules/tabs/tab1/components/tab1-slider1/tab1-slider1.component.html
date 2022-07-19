@@ -5,7 +5,13 @@
   </div>
   <swiper [slidesPerView]="2.2" [spaceBetween]="5">
     <ng-template swiperSlide *ngFor="let s of slider1">
-      <app-tab1-slider-item [img]="s?.img" [description]="s?.description" [price]="s?.price" [liked]="s?.like">
+      <app-tab1-slider-item 
+        [img]="s?.img" 
+        [description]="s?.description" 
+        [price]="s?.price" 
+        [liked]="s?.like"
+        [images]="s?.images"
+        >
       </app-tab1-slider-item>
     </ng-template>
   </swiper>

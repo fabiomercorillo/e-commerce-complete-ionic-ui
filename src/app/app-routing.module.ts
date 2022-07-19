@@ -19,6 +19,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
+    path: 'pdp',
+    loadChildren: () => import('./modules/pdp/pdp.module').then(m => m.PdpModule)
+  },
+  {
     path: '',
     redirectTo: 'on-boarding',
     pathMatch: 'full'

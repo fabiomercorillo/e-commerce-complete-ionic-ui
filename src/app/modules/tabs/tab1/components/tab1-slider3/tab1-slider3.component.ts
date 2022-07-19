@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ITab1SliderItem } from '../../models/i-tab1-slider-item';
+import { IProductItem } from '../../../../../common/models/i-product-item';
 
 @Component({
   selector: 'app-tab1-slider3',
@@ -7,7 +7,7 @@ import { ITab1SliderItem } from '../../models/i-tab1-slider-item';
   styleUrls: ['./tab1-slider3.component.scss'],
 })
 export class Tab1Slider3Component {
-  slider: Array<ITab1SliderItem> = [{
+  slider: Array<IProductItem> = [{
       img: '../../../../assets/images/slider/1.png',
       description: 'Wireless Controller per PS5',
       price: '64.99 €',
