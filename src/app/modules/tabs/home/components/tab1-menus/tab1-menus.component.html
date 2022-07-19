@@ -1,5 +1,8 @@
-<div class="container">
+<div class="container ion-padding-horizontal">
   <div *ngFor="let m of menus">
-    <app-tab1-circular-button [iconName]="m?.iconName" [label]="m?.label"></app-tab1-circular-button>
+    <app-tab1-circular-button
+      [iconName]="m?.iconName"
+      [label]="m?.label"
+    ></app-tab1-circular-button>
   </div>
 </div>

@@ -5,7 +5,7 @@ div {
     align-items: center;
     justify-content: center;
     margin: 0.4rem;
-    width: 60px;
+    width: 55px;
     div {
       &.icon-container {
         background: rgb(254, 150, 152);
@@ -19,6 +19,7 @@ div {
         font-size: 1.5rem;
       }
       &.label {
+        margin-top: 10px;
         text-align: center;
       }
     }
