@@ -1,5 +1,6 @@
 <ion-header collapse="fade" class="no-border">
   <ion-toolbar>
+    <ng-content select="[inside]"></ng-content>
     <ion-buttons slot="start" [hidden]="onlyToolbar">
       <ion-button (click)="onBackClick()">
         <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>

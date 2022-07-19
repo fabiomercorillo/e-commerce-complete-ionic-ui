@@ -1,0 +1,18 @@
+ion-toolbar.sc-ion-searchbar-ios-h,
+ion-toolbar .sc-ion-searchbar-ios-h {
+  height: 50px;
+  padding: 0;
+}
+.searchbar-input-container.sc-ion-searchbar-ios {
+  --border-radius: 14px;
+  --background: var(--light-gray);
+  height: 50px;
+}
+.searchbar-left-aligned.sc-ion-searchbar-ios-h
+  .searchbar-input.sc-ion-searchbar-ios {
+  padding-left: 50px;
+}
+.searchbar-left-aligned.sc-ion-searchbar-ios-h
+  .searchbar-search-icon.sc-ion-searchbar-ios {
+  margin-left: 10px;
+}

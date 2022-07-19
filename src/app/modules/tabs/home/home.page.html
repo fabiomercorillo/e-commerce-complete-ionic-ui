@@ -1,13 +1,17 @@
-<app-tab1-header></app-tab1-header>
+<app-header [onlyToolbar]="true">
+  <!--SEARCH AND CART-->
+  <app-tab1-search-cart inside></app-tab1-search-cart>
+</app-header>
 <ion-content>
   <!--LOGO-->
+  <ion-img src="assets/images/loghi/SSG_logo.jpeg"></ion-img>
 
   <!--BANNER-->
   <app-tab1-banner></app-tab1-banner>
 
   <!--SLIDER 1-->
   <app-tab1-slider1></app-tab1-slider1>
-  
+
   <!--SLIDER 2-->
   <app-tab1-slider2></app-tab1-slider2>
 
