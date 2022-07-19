@@ -1,15 +1,19 @@
 <ion-header collapse="fade" class="no-border">
-  <ion-toolbar>
-    <ng-content
-      select="[inside]"
-      [ngStyle]="{ background: color }"
-    ></ng-content>
-    <ion-buttons slot="start" [hidden]="onlyToolbar">
+  <ion-toolbar
+    [ngStyle]="{ background: color }"
+    [ngClass]="onlySafeArea && 'custom'"
+  >
+    <ng-content select="[inside]" *ngIf="!onlySafeArea"></ng-content>
+    <ion-buttons slot="start" [hidden]="onlyToolbar" *ngIf="!onlySafeArea">
       <ion-button (click)="onBackClick()">
         <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-buttons slot="end" [hidden]="onlyToolbar" *ngIf="rate">
+    <ion-buttons
+      slot="end"
+      [hidden]="onlyToolbar"
+      *ngIf="rate && !onlySafeArea"
+    >
       <div class="rate-container">
         <div class="label">{{ rate }}</div>
         <ion-icon name="star"></ion-icon>

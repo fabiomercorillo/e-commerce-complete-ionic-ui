@@ -13,6 +13,7 @@ export class Tab1SliderItemComponent {
   @Input() liked: boolean;
   @Input() images: Array<string>;
   @Input() rate: number;
+  @Input() index: number;
 
   constructor(private router: Router) {}
 

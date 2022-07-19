@@ -1,16 +1,20 @@
-<div class="container">
-  <div class="header">
-    <div class="description">Basato sui tuoi acquisti</div>
-    <div class="other">Vedi altro</div>
+<div class="header ion-margin">
+  <div class="description font-weight-500 font-size-18">
+    Ulteriori proposte per te
   </div>
-  <div class="products-container">
-    <app-tab1-slider-item *ngFor="let s of slider" 
-      [img]="s?.img" 
-      [description]="s?.description" 
-      [price]="s?.price"
-      [liked]="s?.like"
-      [images]="s?.images"
-      [rate]="s?.rate">
-    </app-tab1-slider-item>
+  <div class="text-secondary-light font-size-14 font-weight-600">
+    Vedi altro
   </div>
+</div>
+<div class="products-container ion-padding">
+  <app-tab1-slider-item
+    *ngFor="let s of slider"
+    [img]="s?.img"
+    [description]="s?.description"
+    [price]="s?.price"
+    [liked]="s?.like"
+    [images]="s?.images"
+    [rate]="s?.rate"
+  >
+  </app-tab1-slider-item>
 </div>

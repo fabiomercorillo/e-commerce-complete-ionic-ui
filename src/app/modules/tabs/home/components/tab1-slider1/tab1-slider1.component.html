@@ -1,19 +1,22 @@
-<div class="container">
-  <div class="header">
-    <div class="description">Basato sui tuoi acquisti</div>
-    <div class="other">Vedi altro</div>
+<div class="header ion-margin">
+  <div class="description font-weight-500 font-size-18">
+    Basato sui tuoi acquisti
   </div>
-  <swiper [slidesPerView]="2.2" [spaceBetween]="5">
-    <ng-template swiperSlide *ngFor="let s of slider1">
-      <app-tab1-slider-item 
-        [img]="s?.img" 
-        [description]="s?.description" 
-        [price]="s?.price" 
-        [liked]="s?.like"
-        [images]="s?.images"
-        [rate]="s?.rate"
-        >
-      </app-tab1-slider-item>
-    </ng-template>
-  </swiper>
+  <div class="text-secondary-light font-size-14 font-weight-600">
+    Vedi altro
+  </div>
 </div>
+<swiper [config]="optsSlider">
+  <ng-template swiperSlide *ngFor="let s of slider1; index as i">
+    <app-tab1-slider-item
+      [img]="s?.img"
+      [description]="s?.description"
+      [price]="s?.price"
+      [liked]="s?.like"
+      [images]="s?.images"
+      [rate]="s?.rate"
+      [index]="i"
+    >
+    </app-tab1-slider-item>
+  </ng-template>
+</swiper>

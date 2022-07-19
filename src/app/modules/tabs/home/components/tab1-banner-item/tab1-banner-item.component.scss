@@ -1,18 +1,22 @@
 div {
-    &.container {
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 27vw;
-        border-radius: 1rem;
-        padding: 1rem;
-    }
-    &.title {
-        color: #FFF;
-        font-weight: bold;
-        font-size: 1rem;
-    }
-    &.subTitle {
-        color: #FFF;
-        font-size: .7rem;
-    }
+  &.container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 27vw;
+    border-radius: 1rem;
+  }
+  .over-layer {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  &.title {
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  &.subTitle {
+    color: #fff;
+  }
 }

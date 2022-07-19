@@ -1,10 +1,22 @@
-<div class="container" (click)="onClick()">
-    <img [src]="img" [alt]="" />
-    <div class="description">{{description}}</div>
-    <div class="last-row">
-        <div class="price">{{price}}</div>
-        <div class="like">
-            <ion-icon name="heart"></ion-icon>
-        </div>
+<div
+  class="container"
+  (click)="onClick()"
+  [ngStyle]="index === 0 && { 'margin-left': '16px' }"
+>
+  <div class="image-wrapper">
+    <ion-img [src]="img"></ion-img>
+  </div>
+  <div class="font-size-14">{{ description }}</div>
+  <div class="last-row">
+    <div class="price font-weight-700 font-size-18">{{ price }}</div>
+    <div
+      class="like"
+      [ngStyle]="!liked && { background: 'rgb(240, 240, 240)' }"
+    >
+      <ion-icon
+        name="heart"
+        [ngStyle]="!liked && { color: 'rgb(180, 180, 180)' }"
+      ></ion-icon>
     </div>
+  </div>
 </div>

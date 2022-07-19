@@ -1,9 +1,9 @@
-div {
-    &.container {
-        margin: 1rem;
-    }
-    &.header {
-        display: flex;
-        justify-content: space-between;
-    }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+swiper {
+  padding-right: 16px;
 }

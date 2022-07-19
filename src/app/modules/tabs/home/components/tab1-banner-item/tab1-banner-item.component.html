@@ -1,4 +1,12 @@
-<div class="container" [ngStyle]="{'background-image': 'url(' + img + ')'}">
-  <div class="title"> {{title}}</div>
-  <div class="subTitle"> {{subTitle}}</div>
+<div
+  class="container"
+  [ngStyle]="{
+    'background-image': 'url(' + img + ')',
+    'margin-left': index === 0 && '16px'
+  }"
+>
+  <div class="over-layer">
+    <div class="title font-size-20 font-weight-800">{{ title }}</div>
+    <div class="subTitle font-size-14 font-weight-500">{{ subTitle }}</div>
+  </div>
 </div>

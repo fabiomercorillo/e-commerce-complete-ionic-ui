@@ -5,9 +5,12 @@
 }
 .container ion-searchbar {
   width: 82%;
+  padding: 0;
+  height: 50px;
 }
 .icon-container {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 50px;
@@ -29,8 +32,8 @@
   color: white;
   background-color: red;
   position: absolute;
-  top: 5px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
 }
 .icon-container ion-icon {
   font-size: 1.4rem;

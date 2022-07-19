@@ -9,4 +9,5 @@ export class Tab1BannerItemComponent {
   @Input() img: string;
   @Input() title: string;
   @Input() subTitle: string;
+  @Input() index: number;
 }

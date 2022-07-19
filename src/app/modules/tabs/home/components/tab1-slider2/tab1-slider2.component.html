@@ -1,12 +1,19 @@
-<div class="container">
-  <div class="header">
-    <div class="description">Offerte dedicate solo a te</div>
-    <div class="other">Vedi altro</div>
+<div class="header ion-margin">
+  <div class="description font-weight-500 font-size-18">
+    Offerte dedicate solo a te
   </div>
-  <swiper [slidesPerView]="1.4" [spaceBetween]="5">
-    <ng-template swiperSlide *ngFor="let b of banners">
-      <app-tab1-banner-item [img]="b?.img" [title]="b?.title" [subTitle]="b?.subTitle">
-      </app-tab1-banner-item>
-    </ng-template>
-  </swiper>
+  <div class="text-secondary-light font-size-14 font-weight-600">
+    Vedi altro
+  </div>
 </div>
+<swiper [config]="optsSlider">
+  <ng-template swiperSlide *ngFor="let b of banners; index as i">
+    <app-tab1-banner-item
+      [img]="b?.img"
+      [title]="b?.title"
+      [subTitle]="b?.subTitle"
+      [index]="i"
+    >
+    </app-tab1-banner-item>
+  </ng-template>
+</swiper>
