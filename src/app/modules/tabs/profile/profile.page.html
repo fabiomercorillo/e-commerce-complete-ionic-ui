@@ -2,9 +2,12 @@
 <ion-content>
   <div class="img-container">
     <ion-img [src]="'assets/images/profile/1.png'"></ion-img>
+    <div class="wrapper-ico-on-bottom">
+      <ion-icon name="camera-outline"></ion-icon>
+    </div>
   </div>
-  <ion-list lines="none">
-    <ion-item *ngFor="let m of menuList">
+  <ion-list lines="none" class="ion-padding-horizontal">
+    <ion-item *ngFor="let m of menuList" class="item">
       <ion-icon name="{{m?.icon}}"></ion-icon>
       <ion-label>{{m?.label}}</ion-label>
       <ion-icon name="chevron-forward-outline"></ion-icon>

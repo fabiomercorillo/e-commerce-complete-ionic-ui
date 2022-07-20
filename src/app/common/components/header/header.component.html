@@ -5,7 +5,10 @@
   >
     <ng-content select="[inside]" *ngIf="!onlySafeArea"></ng-content>
     <ion-buttons slot="start" [hidden]="onlyToolbar" *ngIf="!onlySafeArea">
-      <ion-button (click)="onBackClick()">
+      <ion-button
+        (click)="onBackClick()"
+        [ngClass]="borderOnBack && 'button--with-radius'"
+      >
         <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
       </ion-button>
     </ion-buttons>

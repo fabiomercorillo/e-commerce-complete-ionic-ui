@@ -1,8 +1,45 @@
-div {
-    &.img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 8rem;
-    }
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  padding: 30px;
+  position: relative;
+}
+.wrapper-ico-on-bottom {
+  position: absolute;
+  bottom: 27px;
+  border: 1px solid #fff;
+  right: 0px;
+  z-index: 2;
+  background-color: var(--light-gray);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ion-icon {
+  font-size: 1.3rem;
+}
+
+.item {
+  border-radius: 20px;
+  background-color: var(--light-gray);
+  margin-bottom: 20px;
+  padding: 10px;
+  --background: var(--light-gray);
+}
+
+.item ion-icon,
+.item ion-label {
+  --color: var(--red1);
+  color: var(--red1);
+}
+.item ion-label {
+  margin-left: 20px;
+  font-size: 1rem;
 }

@@ -1,35 +1,63 @@
-<app-header [color]="headerColor" [rate]="product?.rate"></app-header>
+<app-header
+  [color]="headerColor"
+  [rate]="product?.rate"
+  [borderOnBack]="true"
+></app-header>
 <ion-content>
   <div class="container">
-    <div class="focused-image" [ngStyle]="{'background-image': 'url(' + selectedImg + ')'}"></div>
+    <div
+      class="focused-image"
+      [ngStyle]="{'background-image': 'url(' + selectedImg + ')'}"
+    ></div>
 
     <div class="thumbnails-container">
-      <div class="thumbnail" [ngClass]="{'selected' : i === selectedImg}"  *ngFor="let i of product?.images" (click)="onThumbnailClick(i)">
+      <div
+        class="thumbnail"
+        [ngClass]="{'selected' : i === selectedImg}"
+        *ngFor="let i of product?.images"
+        (click)="onThumbnailClick(i)"
+      >
         <img [src]="i" alt="" />
       </div>
     </div>
 
     <div class="product">
-      <div class="title">{{product?.description}}</div>
+      <div class="font-size-22 ion-padding-horizontal">
+        {{product?.description}}
+      </div>
 
       <div class="like">
         <ion-icon name="heart"></ion-icon>
       </div>
 
-      <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua</div>
+      <div class="ion-padding text-secondary font-size-14">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua
+      </div>
 
-      <div class="other">Altri dettagli ></div>
+      <div class="other ion-padding-horizontal">Altri dettagli ></div>
 
       <div class="footer">
         <div class="colors-variants-container">
           <div class="bullets-container">
-            <div class="bullet" style="background-color: rgb(243,86,86)"></div>
-            <div class="bullet" style="background-color: rgb(119,100,172)"></div>
-            <div class="bullet" style="background-color: rgb(217,195,149)"></div>
-            <div class="bullet" style="background-color: rgb(255,255,255)"></div>
+            <div
+              class="bullet"
+              style="background-color: rgb(243, 86, 86)"
+            ></div>
+            <div
+              class="bullet"
+              style="background-color: rgb(119, 100, 172)"
+            ></div>
+            <div
+              class="bullet"
+              style="background-color: rgb(217, 195, 149)"
+            ></div>
+            <div
+              class="bullet"
+              style="background-color: rgb(255, 255, 255)"
+            ></div>
           </div>
-        
+
           <div class="buttons-container">
             <div>
               <ion-icon name="remove-outline"></ion-icon>
@@ -39,9 +67,11 @@
             </div>
           </div>
         </div>
-        
+
         <div class="add-to-cart-container">
-          <ion-button expand="block" size="large">Aggiungi al carrello</ion-button>
+          <ion-button expand="block" size="large"
+            >Aggiungi al carrello</ion-button
+          >
         </div>
       </div>
     </div>
