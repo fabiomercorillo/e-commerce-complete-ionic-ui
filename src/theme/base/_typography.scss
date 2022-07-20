@@ -253,3 +253,8 @@ h6 {
 .text-secondary-light {
   color: var(--mid-light-gray);
 }
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

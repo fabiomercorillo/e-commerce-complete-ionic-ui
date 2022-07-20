@@ -2,8 +2,17 @@
   <div class="img-container">
     <ion-img [src]="item?.img"></ion-img>
   </div>
-  <div class="description-container">
-    <div class="name">{{item?.name}}</div>
-    <div class="price">{{item?.price}} x {{item?.quantity}}</div>
+  <div class="description-container text-truncate">
+    <div class="text-truncate">
+      <span class="font-size-16">{{ item?.name }}</span>
+    </div>
+    <div>
+      <span class="font-weight-700 text-primary font-size-14">{{
+        item?.price
+      }}</span>
+      <span class="text-secondary font-size-14"
+        >&nbsp; x {{ item?.quantity }}</span
+      >
+    </div>
   </div>
 </div>

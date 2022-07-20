@@ -1,4 +1,39 @@
-<app-header></app-header>
-<ion-content>
+<app-header>
+  <div inside class="ion-text-center">
+    <h4 class="ion-no-margin">Il tuo carrello</h4>
+    <h6 class="text-secondary">3 prodotti</h6>
+  </div>
+</app-header>
+<ion-content fullscreen="true">
   <app-cart-item *ngFor="let i of itemsInCart" [item]="i"></app-cart-item>
 </ion-content>
+<app-footer class="footer--cart">
+  <ion-row
+    class="ion-justify-content-between ion-align-items-center ion-margin-top"
+  >
+    <ion-col>
+      <div class="wrapper-icon">
+        <ion-icon name="reader" class="text-secondary font-size-24"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col size="7">
+      <div class="ion-text-right">
+        <p class="ion-no-margin">
+          <span class="font-size-14 text-secondary"
+            >Inserisci codice voucher
+            <ion-icon name="chevron-forward-outline"></ion-icon
+          ></span>
+        </p>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-between ion-align-items-center">
+    <ion-col>
+      <h6 class="text-secondary ion-no-margin">Totale:</h6>
+      <h5 class="ion-no-margin">337.15 €</h5>
+    </ion-col>
+    <ion-col>
+      <ion-button size="large"> Vai al pagamento </ion-button>
+    </ion-col>
+  </ion-row>
+</app-footer>
