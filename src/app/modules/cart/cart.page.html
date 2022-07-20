@@ -1,3 +1,4 @@
-<p>
-  cart works!
-</p>
+<app-header></app-header>
+<ion-content>
+  <app-cart-item *ngFor="let i of itemsInCart" [item]="i"></app-cart-item>
+</ion-content>

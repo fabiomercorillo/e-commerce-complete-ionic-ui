@@ -1,0 +1,36 @@
+div {
+    &.container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 1rem;
+        div {
+            &.img-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20vw;
+                height: 20vw;
+                background: #f9f9f9;
+                border-radius: 1rem;
+                ion-img {
+                    align-self: center;
+                    width: 80%;
+                }
+            }
+            &.description-container {
+                padding: 0 1rem;
+                div {
+                    &.name {
+                        font-size: .9rem;
+                        font-weight: bold;
+                    }
+                    &.price {
+                        font-size: .6rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
