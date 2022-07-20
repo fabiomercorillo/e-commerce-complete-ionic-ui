@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-header',
@@ -12,11 +14,11 @@ export class HeaderComponent implements OnInit {
   @Input() onlySafeArea: boolean;
   @Input() color: string;
   @Input() rate: number;
-  constructor(private router: Router) { }
+  constructor(private nav: NavController) { }
 
   ngOnInit(): void {}
 
   onBackClick(): void {
-    history.back();
+    this.nav.pop();
   }
 }

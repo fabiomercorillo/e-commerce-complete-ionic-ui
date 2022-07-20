@@ -23,6 +23,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/pdp/pdp.module').then(m => m.PdpModule)
   },
   {
+    path: 'cart',
+    loadChildren: () => import('./modules/cart/cart.module').then(m => m.CartModule)
+  },
+  {
     path: '',
     redirectTo: 'on-boarding',
     pathMatch: 'full'
